@@ -17,16 +17,16 @@
 \begin{abstract}
     To jest streszczenie pracy. \lipsum[1]
 \end{abstract}
-
+\footnote{\cite{artykul1}}
 \tableofcontents
 
 \section{Wprowadzenie}
 Wprowadzenie do tematu.
-
+\footnote{\cite{artykul2}}
 \section{Pierwszy Rozdział}
 \subsection{Sekcja 1.1}
 Tekst pierwszej sekcji. \textbf{Pogrubienie}, \textit{Kursywa}.
-
+\footnote{\cite{ksiazka}}
 \subsection{Sekcja 1.2}
 Inny tekst w pierwszym rozdziale.
 
@@ -40,6 +40,7 @@ Tekst drugiej sekcji. Przykład trybu matematycznego: $a^2 + b^2 = c^2$.
     \includegraphics[width=0.5\linewidth]{rysunek1.jpg}
     \caption{Podpis do pierwszego rysunku.}
     \label{sec:rysunek1}
+    \footnote{\cite{referat}}
 \end{figure}
 
 \begin{figure}[h]
@@ -50,8 +51,9 @@ Tekst drugiej sekcji. Przykład trybu matematycznego: $a^2 + b^2 = c^2$.
     \end{tabular}
     \caption{Podpis do drugiego rysunku.}
     \label{sec:rysunek2}
+    
 \end{figure}
-
+\footnote{\cite{raport}}
 \section{Tabela}
 \begin{table}[h]
     \centering
@@ -66,16 +68,14 @@ Tekst drugiej sekcji. Przykład trybu matematycznego: $a^2 + b^2 = c^2$.
     \caption{Tabela odnosząca się do tekstu.}
     \label{sec:tabela}
 \end{table}
-
+\footnote{\cite{online}}
 \section{Odniesienia}
 W sekcji \ref{sec:rysunek1} znajduje się opis pierwszego rysunku, a w sekcji \ref{sec:tabela} jest tabela.
 
 \section{Podsumowanie}
 Podsumowanie pracy.
 
-\begin{thebibliography}{99}
-    \bibitem{przyklad1} Autor, \emph{Tytuł Pracy}, Wydawnictwo, Rok.
-    \bibitem{przyklad2} Inny Autor, \emph{Inny Tytuł}, Inne Wydawnictwo, Inny Rok.
-\end{thebibliography}
+\bibliographystyle{plain}
+\bibliography{data}
 
 \end{document}
