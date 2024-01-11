@@ -1,0 +1,80 @@
+
+
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\title{Tytuł Twojej Pracy}
+\author{Imię Nazwisko}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    To jest streszczenie pracy. \lipsum[1]
+\end{abstract}
+
+\tableofcontents
+
+\section{Wprowadzenie}
+Wprowadzenie do tematu.
+
+\section{Pierwszy Rozdział}
+\subsection{Sekcja 1.1}
+Tekst pierwszej sekcji. \textbf{Pogrubienie}, \textit{Kursywa}.
+
+\subsection{Sekcja 1.2}
+Inny tekst w pierwszym rozdziale.
+
+\section{Drugi Rozdział}
+\subsection{Sekcja 2.1}
+Tekst drugiej sekcji. Przykład trybu matematycznego: $a^2 + b^2 = c^2$.
+
+\section{Rysunki}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{rysunek1.png}
+    \caption{Podpis do pierwszego rysunku.}
+    \label{sec:rysunek1}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{tabular}{c}
+        \includegraphics[width=0.4\linewidth]{rysunek2.png} \\
+        \textbf{Rysunek skomponowany z tekstem.}
+    \end{tabular}
+    \caption{Podpis do drugiego rysunku.}
+    \label{sec:rysunek2}
+\end{figure}
+
+\section{Tabela}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Kolumna 1 & Kolumna 2 \\
+        \hline
+        Wartość 1 & Wartość 2 \\
+        Wartość 3 & Wartość 4 \\
+        \hline
+    \end{tabular}
+    \caption{Tabela odnosząca się do tekstu.}
+    \label{sec:tabela}
+\end{table}
+
+\section{Odniesienia}
+W sekcji \ref{sec:rysunek1} znajduje się opis pierwszego rysunku, a w sekcji \ref{sec:tabela} jest tabela.
+
+\section{Podsumowanie}
+Podsumowanie pracy.
+
+\begin{thebibliography}{99}
+    \bibitem{przyklad1} Autor, \emph{Tytuł Pracy}, Wydawnictwo, Rok.
+    \bibitem{przyklad2} Inny Autor, \emph{Inny Tytuł}, Inne Wydawnictwo, Inny Rok.
+\end{thebibliography}
+
+\end{document}
